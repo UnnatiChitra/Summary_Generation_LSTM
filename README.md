@@ -10,7 +10,7 @@ Text Summarization
 ## Problem Statement
 Customer reviews can be lengthy and detailed. Manually analysing these reviews, as you might guess, takes a long time. This is where Natural Language Processing's application can be put to use to develop a short summary for lengthy reviews.
 
-Our objective here is to generate a summary for the "Amazon Fine Food reviews" using the abstraction-based text summarization approaches.
+Our objective here is to generate a summary for the "Amazon Fine Food reviews" using the abstraction-based text summarization approache.
 
 Data Scource: [Kaggle](https://www.kaggle.com/snap/amazon-fine-food-reviews?select=Reviews.csv)
 

@@ -1,34 +1,35 @@
-# Summary_Generation_LSTM
+# Test Summarization using LSTM Encoder-Decoder
 
-**Objective:**
-Develop an LSTM-based model to generate extractive summaries for news articles.
+Text summarization is the problem of creating a short, accurate, and fluent summary of a longer text document. It is a Natural Language Processing application which produces short and meaningful summary of a lengthy paragraph thereby helping us to understand the essence of the topic in an efficient way.
 
-**Data:**
-Utilized a dataset from Kaggle, containing a collection of news articles.
+Automatic text summarization methods are greatly needed to address the ever-growing amount of text data available online to both better help discover relevant information and to consume relevant information faster.
 
-**Approach:**
+Text Summarization
+1. **Abstrative Based**: In Abstractive based, we generate new sentences from the original text. The sentences generated through abstractive summarization might not be present in the original text.
 
-1. **Data Preprocessing:**
+## Problem Statement
+Customer reviews can be lengthy and detailed. Manually analysing these reviews, as you might guess, takes a long time. This is where Natural Language Processing's application can be put to use to develop a short summary for lengthy reviews.
 
-- Tokenization: Converted text into sequences of tokens.
-- Padding: Ensured uniform input length by padding sequences.
-- Splitting: Divided data into training, validation, and test sets.
-     
-2. **Training:**
+Our objective here is to generate a summary for the "Amazon Fine Food reviews" using the abstraction-based and as well as extraction-based text summarization approaches.
 
-- Trained the LSTM model on the preprocessed dataset.
-- Implemented techniques like dropout to prevent overfitting.
-- Monitored training with validation loss and accuracy metrics.
-  
-3. **Evaluation:**
+Data Scource: [Kaggle](https://www.kaggle.com/snap/amazon-fine-food-reviews?select=Reviews.csv)
 
-- Used the ROUGE (Recall-Oriented Understudy for Gisting Evaluation) score to evaluate the performance.
-- ROUGE scores provide a measure of the overlap between the generated summaries and the reference summaries.
-- Focused on ROUGE-N (unigram, bigram) and ROUGE-L (longest common subsequence) scores.
-  
-**Results:**
+## Project pipeline
+1. Understanding Text Summarization,
+2. Text pre-processing,
+3. Abstractive Text Summarization using LSTM, ENCODER-DECODER architecture,
+4. Web scrape an article using BS4.
 
-- The model successfully generated extractive summaries that captured the essence of the news articles.
-- Achieved competitive ROUGE scores, indicating the effectiveness of the model in summarization tasks.
+## Results
+### Abstractive Text Summarization 
+
+Original text: ``gluten free want crackers one also delicious second order``<br>
+Predicted summary:  ``great gluten free baking``
 
 
+Original text: ``coffee tastes like regular coffee good weak used little less water regular strength coffee taste great smell better whether works stomach needed sure ``<br>
+Predicted summary:  ``good coffee``
+
+
+Original text: ``first time italy wife actually give gifts well good sucks seasonal definitely makes look forward holidays``<br>
+Predicted summary:  ``the best``
